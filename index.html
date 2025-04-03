@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" class="whatsapp-logo">
+                <h1>WhatsApp</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" id="numero" placeholder="Digite o número do WhatsApp" class="search-input">
+                <button id="pesquisar" class="search-button">
+                    <i class="fas fa-search"></i> Pesquisar
+                </button>
+            </div>
+        </header>
+        
+        <main class="app-main">
+            <section class="contacts-section">
+                <h2 class="section-title">Contatos</h2>
+                <div id="galeria" class="contacts-grid"></div>
+            </section>
+            
+            <section class="chat-section">
+                <div class="chat-header">
+                    <img id="current-contact-avatar" src="https://via.placeholder.com/40/ECE5DD/666666?text=PF" alt="Contato" class="chat-contact-avatar">
+                    <h2 id="current-contact-name" class="section-title">Selecione um contato</h2>
+                </div>
+                <div id="chat" class="chat-messages"></div>
+            </section>
+        </main>
+        
+        <div id="loading" class="loading-indicator">
+            <div class="loading-spinner"></div>
+            <p>Carregando dados...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
